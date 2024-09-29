@@ -1,0 +1,233 @@
+.cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(5, 155, 105);
+    color: white;
+}
+.cont1{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.cont1-it{
+    margin-left: 25px;
+}
+/* menu */
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 232, 158);
+    color: white;
+}
+.logo{
+    width: 10%;
+    text-align: center;
+    margin: 0px 0px 0px 10px;
+}
+.menu1{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.menu-item{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu-item:hover{
+    background-color: rgb(0, 107, 71);
+}
+.menu-item b{
+    font-size: 14.5px;
+}
+.the{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 15px 20px 0px 0px;
+}
+/* slider show */
+.carousel-item img{
+    height: 30%;
+}
+/* product */
+.title{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 90%;
+    box-shadow: 10px 10px 15px rgb(101, 164, 169);
+}
+.anh{
+    position: relative;
+}
+.sale{
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+}
+.card-title,.card-text{
+    text-align: center;
+}
+.button{
+    position: relative;
+    text-align: center;
+}
+.anh1{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 13px;
+    margin-left: 5px;
+}
+.slider2{
+    width: 100%;
+    margin-top: 3%;
+    border: 1px solid black;
+}
+/* footer */
+.tieude{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.td1-1,.td1-5{
+    width: 27%;
+}
+.td1-2,.td1-3,.td1-4{
+    width: 16%;
+}
+/* ft */
+.ft{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    background-color: rgb(233, 230, 227);
+    margin-top: -12px;
+}
+.ft1,.ft2{
+    width: 50%;
+}
+.ft1{
+    margin-top: 10px;
+}
+.ft2{
+    text-align: end;
+}
+@media screen and (max-width:1024px) {
+    .cont{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .cont1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo,.menu1,.the{
+        width: 100%;
+    }
+    .menu-item b{
+        font-size:23px;
+    }
+    .menu1{
+        margin: 20px 25px 20px 0px;
+    }
+    .tieude {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        grid-template-areas: 
+            "ten2 ten3 ten4"
+            "ten1 ten5 ten5";
+    }
+    .td1-1, .td1-2, .td1-3, .td1-4, .td1-5 {
+        width: auto;
+    }
+    .td1-1 { grid-area: ten1; }
+    .td1-2 { grid-area: ten2; }
+    .td1-3 { grid-area: ten3; }
+    .td1-4 { grid-area: ten4; }
+    .td1-5 { grid-area: ten5; }
+}
+@media screen and (max-width:431px) {
+
+    .cont{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .cont1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .cont1 b{
+        font-size: 13px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu h1{
+        font-size: 43px;
+        margin-top: 10px;
+    }
+    .logo,.menu1,.the{
+        width: 100%;
+    }
+    .menu1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item{
+        width: 100%;
+        font-size:10px;
+    }
+    .menu1{
+        margin: 20px 0px 20px 0px;
+    }
+    .tieude {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        grid-template-areas: 
+            "ten2 ten3"
+            "ten4 ten1"
+            "ten5 ten5";
+    }
+    .td1-1, .td1-2, .td1-3, .td1-4, .td1-5 {
+        width: auto;
+    }
+    .td1-1 { grid-area: ten1; }
+    .td1-2 { grid-area: ten2; }
+    .td1-3 { grid-area: ten3; }
+    .td1-4 { grid-area: ten4; }
+    .td1-5 { grid-area: ten5; }
+}
